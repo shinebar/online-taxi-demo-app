@@ -12,6 +12,7 @@
         <module>service-sms</module>
         <module>demo</module>
         <module>eureka-server-app</module>
+        <module>api-listen-order</module>
 
     </modules>
 

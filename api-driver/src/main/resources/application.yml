@@ -1,0 +1,9 @@
+server:
+  port: 8004
+eureka:
+  instance:
+    appname: API_DRIVER
+    hostname: http://pdcsit1.deppontest.com
+  client:
+    service-url:
+      defaultZone: ${eureka.instance.hostname}:7001/eureka/
