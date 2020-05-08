@@ -1,0 +1,9 @@
+server:
+  port: 8002
+eureka:
+  instance:
+    hostname: http://pdcsit1.deppontest.com
+    appname: EUREKA_SERVICE_SMS
+  client:
+    service-url:
+      defaultZone: ${eureka.instance.hostname}:7001/eureka/

@@ -1,0 +1,9 @@
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: http://pdcsit1.deppontest.com
+    appname: API_LISTEN_ORDER
+  client:
+    service-url:
+      defaultZone: ${eureka.instance.hostname}:7001/eureka/

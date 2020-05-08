@@ -1,0 +1,15 @@
+
+#eureka.instance.hostname=http://uapsit1.deppontest.com
+#eureka.client.service-url.default-zone=
+#eureka.client.register-with-eureka=false
+#eureka.client.fetch-registry=false
+server:
+  port: 7001
+eureka:
+  client:
+    service-url:
+      defaultZone: ${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: http://pdcsit1.deppontest.com
